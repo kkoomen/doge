@@ -48,29 +48,29 @@
     ]
   },
   "dependencies": {
-    "tree-sitter": "^0.18.1",
-    "tree-sitter-bash": "^0.16.1",
-    "tree-sitter-c": "^0.16.1",
-    "tree-sitter-cpp": "^0.16.0",
-    "tree-sitter-java": "^0.16.0",
+    "tree-sitter": "^0.19.0",
+    "tree-sitter-bash": "^0.19.0",
+    "tree-sitter-c": "^0.19.0",
+    "tree-sitter-cpp": "^0.19.0",
+    "tree-sitter-java": "^0.19.1",
     "tree-sitter-lua": "^1.6.2",
-    "tree-sitter-php": "^0.16.2",
-    "tree-sitter-python": "^0.17.1",
+    "tree-sitter-php": "^0.19.0",
+    "tree-sitter-python": "^0.19.0",
     "tree-sitter-ruby": "^0.17.0",
-    "tree-sitter-typescript": "^0.16.3"
+    "tree-sitter-typescript": "^0.19.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@release-it/conventional-changelog": "^2.0.1",
-    "@types/node": "^14.14.31",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
+    "@types/node": "^14.14.34",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
     "@vercel/ncc": "^0.27.0",
     "caxa": "^1.0.0",
     "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
@@ -81,6 +81,6 @@
     "release-it": "^14.4.1",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }

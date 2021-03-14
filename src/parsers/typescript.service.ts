@@ -324,9 +324,9 @@ export class TypeScriptParserService
                     pn.children
                       .filter((spn: SyntaxNode) =>
                         [
-                          'pair',
-                          'shorthand_property_identifier',
-                          'assignment_pattern',
+                          'pair_pattern',
+                          'shorthand_property_identifier_pattern',
+                          'object_assignment_pattern',
                         ].includes(spn.type),
                       )
                       .forEach((spn: SyntaxNode) => {
@@ -338,16 +338,16 @@ export class TypeScriptParserService
                           optional: false,
                         };
 
-                        if (spn.type === 'shorthand_property_identifier') {
+                        if (spn.type === 'shorthand_property_identifier_pattern') {
                           subparam.name = spn.text;
                         }
 
-                        if (spn.type === 'assignment_pattern') {
+                        if (spn.type === 'object_assignment_pattern') {
                           subparam.name = spn.children.shift()?.text;
                           subparam.optional = true;
                         }
 
-                        if (spn.type === 'pair') {
+                        if (spn.type === 'pair_pattern') {
                           subparam.name = spn.children.shift()?.text;
                           const paramTypeChild = spn.children.pop();
                           if (

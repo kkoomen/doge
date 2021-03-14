@@ -12,7 +12,7 @@ jobs:
     name: Vim
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest]
         vim-version: [v7.4.2119, head]
         node-version: [10, 12, 14]
         include:

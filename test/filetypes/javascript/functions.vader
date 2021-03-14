@@ -338,9 +338,9 @@ Expect javascript (generated comments with a description, @param, @throws and @r
 # Test the 'destructuring_props' option
 # ==============================================================================
 Given javascript (functions with destructuring_props):
-  function foo({ a, b: str, c = 3, d: int = 5 }) {}
+  function foo({ a, b, c = 3, d = 5 }) {}
 
-  function foo({ a, b: str, c = 3, d: int = 5 }) {}
+  function foo({ a, b, c = 3, d = 5 }) {}
 
 
 Do (trigger doge):
@@ -358,12 +358,12 @@ Expect javascript (generated comments with a description, @param and @return tag
    *
    * @param {[TODO:type]} [TODO:name] - [TODO:description]
    * @param {[TODO:type]} [TODO:name].a - [TODO:description]
-   * @param {str} [TODO:name].b - [TODO:description]
+   * @param {[TODO:type]} [TODO:name].b - [TODO:description]
    * @param {[TODO:type]} [[TODO:name].c] - [TODO:description]
-   * @param {int} [[TODO:name].d] - [TODO:description]
+   * @param {[TODO:type]} [[TODO:name].d] - [TODO:description]
    * @return {[TODO:type]} [TODO:description]
    */
-  function foo({ a, b: str, c = 3, d: int = 5 }) {}
+  function foo({ a, b, c = 3, d = 5 }) {}
 
   /**
    * [TODO:description]
@@ -371,7 +371,7 @@ Expect javascript (generated comments with a description, @param and @return tag
    * @param {[TODO:type]} [TODO:name] - [TODO:description]
    * @return {[TODO:type]} [TODO:description]
    */
-  function foo({ a, b: str, c = 3, d: int = 5 }) {}
+  function foo({ a, b, c = 3, d = 5 }) {}
 
 # ==============================================================================
 # Function calls that should not generate documentation
