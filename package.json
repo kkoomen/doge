@@ -50,7 +50,7 @@
   "dependencies": {
     "tree-sitter": "^0.18.1",
     "tree-sitter-bash": "^0.16.1",
-    "tree-sitter-c": "^0.16.1",
+    "tree-sitter-c": "^0.19.0",
     "tree-sitter-cpp": "^0.16.0",
     "tree-sitter-java": "^0.16.0",
     "tree-sitter-lua": "^1.6.2",
