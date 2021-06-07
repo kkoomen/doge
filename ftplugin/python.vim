@@ -102,7 +102,7 @@ call doge#buffer#register_doc_standard('numpy', [
 \      ],
 \    },
 \    'template': [
-\      '"""',
+\      '"""\',
 \      '!summary',
 \      '',
 \      '!description',
@@ -113,7 +113,7 @@ call doge#buffer#register_doc_standard('numpy', [
 \      '%(returnType|)%',
 \      '%(returnType|Returns)%',
 \      '%(returnType|-------)%',
-\      '%(returnType|{returnType}:)%',
+\      '%(returnType|{returnType})%',
 \      '%(returnType|\t!description)%',
 \      '%(exceptions|)%',
 \      '%(exceptions|Raises)%',

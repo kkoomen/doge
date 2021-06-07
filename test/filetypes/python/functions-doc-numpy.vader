@@ -12,7 +12,7 @@ Do (trigger doge):
 
 Expect python (generated comment with nothing but the summary and description 'TODO'):
   def myFunc():
-    """
+    """\
     [TODO:summary]
 
     [TODO:description]
@@ -31,7 +31,7 @@ Do (trigger doge):
 
 Expect python (generated comment with Parameters tag):
   def myFunc(p1: Callable[[int], None] = False, p2: Callable[[int, Exception], None] = {}):
-    """
+    """\
     [TODO:summary]
 
     [TODO:description]
@@ -57,7 +57,7 @@ Do (trigger doge):
 
 Expect python (generated comment with Parameters and Returns tag):
   def myFunc(p1: Callable[[int], None] = False, p2: Callable[[int, Exception], None] = {}) -> Sequence[T]:
-    """
+    """\
     [TODO:summary]
 
     [TODO:description]
@@ -71,7 +71,7 @@ Expect python (generated comment with Parameters and Returns tag):
 
     Returns
     -------
-    Sequence[T]:
+    Sequence[T]
       [TODO:description]
     """
     pass
@@ -94,7 +94,7 @@ Do (trigger doge):
 
 Expect python (generated comment with :param and :raises tags):
   def myFunc(p1 = 'string'):
-    """
+    """\
     [TODO:summary]
 
     [TODO:description]
